@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+
+    android:id="@+id/child"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+   <ImageView
+    android:layout_width="75dp"
+
+       android:background="#ffffff"
+       android:layout_gravity="center"
+    android:layout_height="75dp"
+    android:id="@+id/img_child"
+    />
+
+
+    <TextView
+        android:id="@+id/textview1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:includeFontPadding="false"
+        android:textSize="11.5sp"
+        android:textColor="#000000"
+        android:text="1"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="40dp"
+        android:id="@+id/newicon"
+      android:visibility="gone"
+        android:layout_height="20dp"
+
+        android:layout_gravity="end|top"
+        android:src="@drawable/newicon" />
+</FrameLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            android:background=" @drawable/gradient_tab"
+
+            android:id="@+id/appBar"
+
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <LinearLayout
+
+                android:orientation="horizontal"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:gravity="center"
+                android:layout_marginBottom="2dp"
+                android:background=" @drawable/gradient_tab"
+                android:layout_width="match_parent"
+                android:layout_height="28dp">
+                <ImageView
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/img_menu"
+                    android:layout_width="wrap_content"
+                    android:adjustViewBounds="true"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/menu_icon"/>
+                <TextView
+
+                    android:includeFontPadding="false"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:lines="1"
+
+                    android:layout_height="wrap_content"
+                    android:text="Animated Cartoon Stickers 1500+"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"/>
+
+
+
+            </LinearLayout>
+            <com.google.android.material.tabs.TabLayout
+
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabTextAppearance="@style/custom_text"
+                app:tabGravity="fill"
+                app:tabInlineLabel="true"
+                app:tabMode="fixed"
+                app:tabIndicatorAnimationMode="elastic"
+                android:layout_marginBottom="-4dp"
+                app:tabIndicatorGravity="stretch"
+                app:tabIndicatorColor="@color/white"
+                app:tabIndicator="@drawable/white_extra_round"
+                app:tabTextColor="@color/white"
+                app:tabSelectedTextColor="@color/colorPrimaryDark"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <!--            android:background="#fcfaf7"-->
+
+        <LinearLayout
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+           android:layout_marginTop="3dp"
+            android:background="#F8f8ff"
+            android:id="@+id/layout_main"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerLayout"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_repeat_mode="reverse"
+                app:shimmer_shape="linear">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/shimmer_layout" />
+
+                    <include layout="@layout/shimmer_layout" />
+
+                    <include layout="@layout/shimmer_layout" />
+
+
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/nav_bottom_background"/>
+
+
+
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpaer_main"/>
+        <LinearLayout
+            android:layout_gravity="bottom|end"
+   android:id="@+id/linear_bottom"
+            android:layout_marginEnd="12dp"
+
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="25dp"
+
+                app:cardElevation="3dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:gravity="center"
+                    android:background="@drawable/white_riplple_noround"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/up_arrow"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/fragment_main">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/_nav_view"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        >
+        <include	layout="@layout/_drawer_main"/>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

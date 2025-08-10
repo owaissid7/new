@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+ android:id="@+id/cardview1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    android:layout_marginStart="2dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardBackgroundColor="#ffffff"
+    app:cardUseCompatPadding="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="75dp"
+    android:orientation="vertical"
+
+
+    android:id="@+id/pickup_recycler"
+  android:gravity="center"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_child"
+
+    >
+
+    <ImageView
+
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:id="@+id/img_pickup"
+    />
+
+<TextView
+    android:id="@+id/text_cat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="10sp"
+
+    android:lines="1"
+    android:textColor="#000000"
+    android:text="Category"
+    />
+
+<LinearLayout
+    android:visibility="gone"
+
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/space"
+    android:layout_height="3dp"
+    android:background="#E31C1C"/>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

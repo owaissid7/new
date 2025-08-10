@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+
+    android:background="@drawable/gradient_emoji"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_off"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+       android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="OOPS!"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="16sp"
+
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="No Internet Connection\nPlease Check Your Connection"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:id="@+id/l_close"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        android:background="@drawable/custom_riplple"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textColor="#E31B1B"
+        android:layout_marginBottom="20dp"
+        android:text="Close"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:id="@+id/l_retry"
+            android:fontFamily="@font/poppins"
+            android:textSize="18sp"
+            android:background="@drawable/custom_riplple"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="#E31B1B"
+            android:layout_marginBottom="20dp"
+            android:text="RETRY"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

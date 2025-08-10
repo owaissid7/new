@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    android:id="@+id/linearm"
+    android:layout_height="match_parent"
+    android:background="#fcfaf7"
+
+    tools:context=".PickupFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        android:layout_width="match_parent"
+        android:id="@+id/swipe"
+
+        android:layout_weight="1"
+        android:layout_height="0dp">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:layout_height="wrap_content">
+
+
+        <FrameLayout
+            android:layout_gravity="top"
+
+            android:background="@drawable/nav_bottom_background2"
+            android:layout_width="match_parent"
+            android:layout_height="37dp">
+            <ImageView
+                android:layout_gravity="start|center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/img_menu"
+
+                android:layout_width="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="4dp"
+                android:layout_height="28dp"
+                android:src="@drawable/menu_icon"/>
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:id="@+id/toptitle"
+                android:layout_width="wrap_content"
+
+
+                android:gravity="center"
+                android:lines="1"
+                android:layout_height="wrap_content"
+                android:text="Animated Cartoon Stickers 1500+"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_gravity="end"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/img_grid"
+
+                android:layout_marginEnd="8dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_triplle_grid"/>
+
+
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="31dp"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:background="@drawable/gradient_pickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="count"
+
+                android:includeFontPadding="false"
+
+
+                android:textSize="13sp"
+
+
+                android:textColor="#ffffff"
+                android:id="@+id/textcount"/>
+
+
+        </LinearLayout>
+    </FrameLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+ android:nestedScrollingEnabled="true"
+        android:layout_marginBottom="4dp"
+       android:layout_marginEnd="4dp"
+       android:layout_marginStart="4dp"
+
+  android:layout_height="wrap_content"
+        android:id="@+id/recycler_pickup"/>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:id="@+id/b_addwhats"
+ android:padding="4dp"
+        android:layout_marginBottom="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+
+        android:background="@drawable/green"
+        android:orientation="horizontal">
+        <ImageView
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+           android:layout_marginStart="8dp"
+            android:src="@drawable/whats"/>
+        <TextView
+            android:layout_weight="1"
+            android:lines="1"
+            android:textStyle="bold"
+            android:gravity="center
+"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/lob2"
+
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:text=" Add Stickers To WhatsApp  "/>
+
+        <ImageView
+
+            android:background="?attr/selectableItemBackgroundBorderless"
+
+            android:layout_width="35dp"
+            android:id="@+id/add_expand"
+             android:layout_marginEnd="8dp"
+            android:layout_height="35dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/round_expand_less_white_48dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        android:layout_gravity="bottom"
+        android:id="@+id/linear_bottom"
+        android:layout_marginStart="1dp"
+           android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/shadow"
+        android:padding="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearb"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginEnd="25dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--                    android:layout_marginBottom="2dp"-->
+                <LinearLayout
+
+                    android:layout_gravity="center"
+                        android:gravity="end"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:id="@+id/l_addkey"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+             android:layout_gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/keyb"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+
+                        android:src="@drawable/keyboardsetting"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:fontFamily="@font/lob2"
+                        android:layout_marginStart="5dp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text=" Add To KeyBoard  "/>
+                    <ImageView
+                        android:id="@+id/add_key"
+
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/circle_outline_24"/>
+
+
+
+
+
+                </LinearLayout>
+
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="10dp"
+                  app:cardElevation="3.5dp"
+
+
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/fav_card"
+                        android:gravity="center"
+
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/white_riplple_noround"
+                        android:orientation="vertical">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="70dp"
+
+
+                                android:layout_height="70dp"
+                                app:lottie_rawRes="@raw/favour_heart"
+                                android:id="@+id/lottie_fav"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/l_addwhats"
+
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="4dp"
+                android:background="@drawable/green"
+                android:orientation="horizontal">
+                <ImageView
+
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+
+                    android:src="@drawable/whats"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/lob2"
+
+
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:text=" Add Stickers To WhatsApp  "/>
+                <ImageView
+
+                    android:layout_width="35dp"
+                    android:id="@+id/add_whats"
+
+                    android:layout_height="35dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/circle_outline_24"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

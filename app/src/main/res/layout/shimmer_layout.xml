@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="4dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:background="@drawable/shimmerround"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+
+            android:background="@drawable/white_round2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+                <LinearLayout
+                    android:orientation="horizontal"
+                   android:layout_marginTop="4dp"
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+
+                    android:background="@drawable/shimmerround" />
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:padding="3dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                      android:src="@drawable/stickersample"
+                       />
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/shimmerround"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="3dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/stickersample"/>
+
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/shimmerround"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="3dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/stickersample" />
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/shimmerround"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>
